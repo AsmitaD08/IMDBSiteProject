@@ -1,0 +1,122 @@
+body{
+    background-color: beige;
+}
+.nav{
+    list-style-type: none;
+    display: inline;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+}
+.search{
+    text-align: center;
+}
+.search h1{
+    font-size: 100px;
+}
+.search input{
+    height: 40px;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 2px;
+}
+.search button{
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.searchResults{
+    display: none;
+}
+.movieDiv{
+    border: 1px solid rgb(59, 176, 200);
+    margin-top: 5rem;
+    width: 50%;
+    padding: 5px;
+}
+.movieDetails{
+    display: inline-block;
+}
+#myProgress{
+    width: 40%;
+    background-color: gray;
+}
+#myBar{
+    width: 18rem;
+    height: 30px;
+    background-color: green;
+}
+#myBar p{
+    padding-top: 6px;
+    text-align: center;
+    color: aliceblue;
+}
+.btnDiv{
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+}
+/* Fav Movie Page */
+#displaylist li{
+    list-style-type: none;
+    margin: 10px;
+    border: 1px solid rgb(91,117,109);
+    padding: 2px;
+    width: 40rem;
+    background-color: rgb(197, 244, 229);
+}
+#displaylist div{
+    text-align: center;
+    display: inline-block;
+}
+#displaylist li button{
+    margin-top: 70px;
+    margin-right: 30px;
+    float: right;
+    vertical-align: bottom;
+    background-color: rgb(50, 95, 80);
+    color: aliceblue;
+}
+.favName{
+    display: block;
+    margin-bottom: 0;
+}
+.favimg{
+    vertical-align: top;
+    display: inline-block;
+    height: 150px;
+    width: 100px;
+    align-self: center;
+    margin-right: 10px;
+}
+.favLang{
+    display: block;
+}
+.favGenre{
+    display: block;
+}
+/* Movie Details Page */
+header h1{
+    text-align: center;
+}
+.MovieDetails{
+    display: inline-flex;
+}
+.MovieDetails img{
+    display: inline-block;
+}
+.heading{
+    display: inline-block;
+    margin-left: 2rem;
+}
