@@ -20,6 +20,7 @@ async function searchMovies(movieName){
         if(!response.ok){
             throw new Error(`Network response was not OK: ${response.status}`);
         }
+         searchBtn.disabled = true;
         const movies = await response.json();
         displaySearchResults(movies);
     } catch (error) {
@@ -28,7 +29,7 @@ async function searchMovies(movieName){
 }
 //display search results and add to favorites
 function displaySearchResults(movie){
-      searchBtn.disabled = true;
+     
     searchDiv[0].style.display="none";
     searchResultDiv[0].style.display="block";
     let movieDiv = document.createElement('div');
