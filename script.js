@@ -9,12 +9,14 @@ searchBtn.addEventListener('click',()=>{
     }
     else{
         searchBtn.disabled = true;
-        searchMovies(searchInput.value);
+       
     }
+   
 })
 async function searchMovies(movieName){
     try {
         const response = await fetch(`http://www.omdbapi.com/?apikey=75dafd91&t=${movieName}&plot=full`);
+         referrerPolicy: "unsafe-url" 
         if(!response.ok){
             throw new Error(`Network response was not OK: ${response.status}`);
         }
@@ -26,6 +28,7 @@ async function searchMovies(movieName){
 }
 //display search results and add to favorites
 function displaySearchResults(movie){
+     searchMovies(searchInput.value);
     searchDiv[0].style.display="none";
     searchResultDiv[0].style.display="block";
     let movieDiv = document.createElement('div');
