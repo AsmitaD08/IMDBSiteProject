@@ -8,8 +8,8 @@ searchBtn.addEventListener('click',()=>{
         alert('Please Provide Movie Name to search');
     }
     else{
-        searchBtn.disabled = true;
        
+         searchMovies(searchInput.value);
     }
    
 })
@@ -28,7 +28,7 @@ async function searchMovies(movieName){
 }
 //display search results and add to favorites
 function displaySearchResults(movie){
-     searchMovies(searchInput.value);
+      searchBtn.disabled = true;
     searchDiv[0].style.display="none";
     searchResultDiv[0].style.display="block";
     let movieDiv = document.createElement('div');
