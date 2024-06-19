@@ -15,7 +15,7 @@ searchBtn.addEventListener('click',()=>{
 })
 async function searchMovies(movieName){
     try {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=75dafd91&t=${movieName}&plot=full`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=75dafd91&t=${movieName}&plot=full`);
          referrerPolicy: "unsafe-url" 
         if(!response.ok){
             throw new Error(`Network response was not OK: ${response.status}`);
